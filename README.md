@@ -54,10 +54,10 @@ The following steps were followed during the development of the project:
 5. Train-Test Split
 6. Feature Scaling
 7. Model Training and Evaluation
-   ○ Logistic Regression
-   ○ Decision Tree
-   ○ Random Forest
-   ○ Random Forest with Class Weights
+   - Logistic Regression
+   - Decision Tree Classifier
+   - Random Forest Classifier
+   - Random Forest with Class Weights
 8. Model Comparison
 9. Final Model Selection
 
