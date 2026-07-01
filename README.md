@@ -41,6 +41,7 @@ The primary objective of this project is to develop a machine learning model tha
 - Matplotlib
 - Seaborn
 - Scikit-learn
+- Imbalanced learn
 - Streamlit
 - Joblib
 - Jupyter Notebook
