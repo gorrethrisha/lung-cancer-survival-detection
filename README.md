@@ -35,13 +35,15 @@ The primary objective of this project is to develop a machine learning model tha
 
 ## Tech Stack
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Jupyter Notebook
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Streamlit
+- Joblib
+- Jupyter Notebook
 
 ## Methodology
 
@@ -63,12 +65,13 @@ The following steps were followed during the development of the project:
 
 ## Model Performance
 
-| Model                            | Accuracy | Precision | Recall   | F1 Score |
-| -------------------------------- | -------- | --------- | -------- | -------- |
-| Logistic Regression              | 0.779770 | 0.000000  | 0.000000 | 0.000000 |
-| Decision Tree                    | 0.642888 | 0.224409  | 0.253055 | 0.237873 |
-| Random Forest                    | 0.778421 | 0.227273  | 0.002551 | 0.005045 |
-| Random Forest with Class Weights | 0.778685 | 0.221902  | 0.001964 | 0.003894 |
+| Model                            | Accuracy | Precision | Recall | F1 Score |
+| -------------------------------- | -------- | --------- | ------ | -------- |
+| Logistic Regression              | 77.98%   | 0.00%     | 0.00%  | 0.00%    |
+| Decision Tree Classifier         | 64.29%   | 22.44%    | 25.31% | 23.79%   |
+| Random Forest Classifier         | 77.84%   | 22.73%    | 0.26%  | 0.50%    |
+| Random Forest with Class Weights | 77.87%   | 22.19%    | 0.20%  | 0.39%    |
+
 
 ## Final Model Selection
 
@@ -77,6 +80,20 @@ Logistic Regression, Decision Tree, Random Forest, and Random Forest with Class 
 Among all the models, the Decision Tree classifier demonstrated the best overall performance by achieving the highest recall and F1-score while identifying the maximum number of surviving patients.
 
 Since correctly predicting patient survival is important in medical applications, **the Decision Tree classifier was selected as the final model for lung cancer survival Detection.**
+
+## Streamlit Web Application
+
+A Streamlit-based web application was developed to provide an interactive interface for Lung Cancer Survival Detection.
+
+The application allows users to enter patient and treatment-related information and instantly predicts the patient survival outcome using the trained machine learning model.
+
+## Project Files
+
+- `Lung Cancer Survival Detection.ipynb` - Complete notebook containing data preprocessing, model training, and evaluation.
+- `app.py` - Streamlit web application for lung cancer survival detection.
+- `lung_cancer_survival_model.pkl` - Saved trained Decision Tree model.
+- `requirements.txt` - List of project dependencies.
+- `README.md` - Project documentation.
 
 ## Conclusion
 
